@@ -99,7 +99,7 @@ body {
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 1.21;
   margin-bottom: 20px;
 }
 
@@ -108,7 +108,7 @@ body {
   font-style: normal;
   font-weight: bold;
   font-size: 45px;
-  line-height: 55px;
+  line-height: 1.21;
   margin-bottom: 25px;
 }
 
@@ -117,7 +117,7 @@ body {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
 }
 @media screen and (min-width: 1200px) {
   .about_description {
@@ -139,7 +139,7 @@ body {
   font-style: normal;
   font-weight: bold;
   font-size: 22px;
-  line-height: 27px;
+  line-height: 1.22;
   margin-bottom: 10px;
 }
 
@@ -153,7 +153,7 @@ body {
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
 }
 
 .project,
@@ -162,11 +162,19 @@ body {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
 }
 
 .project_link {
   margin-left: 10px;
+  color: #1e2939;
+  font-size: 16px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), font-size 250ms cubic-bezier(0.4, 0, 0.2, 1), font-weight 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.project_link:hover, .project_link:focus {
+  color: #fb6d3a;
+  font-weight: 700;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project_bracket {
@@ -174,16 +182,20 @@ body {
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
 }
 
 /* <!-- Work --> */
+.department {
+  margin-bottom: 20px;
+}
+
 .work_position {
   color: #000;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
   margin-bottom: 10px;
 }
 
@@ -191,7 +203,7 @@ body {
   color: #fb6d3a;
   font-weight: bold;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
 }
 
 .work_period {
@@ -208,7 +220,7 @@ body {
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
-  line-height: 15px;
+  line-height: 1.25;
 }
 
 .work_list {
@@ -221,7 +233,7 @@ body {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
 }
 
 /* <!-- Education --> */
@@ -229,14 +241,14 @@ body {
   color: #fb6d3a;
   font-weight: bold;
   font-size: 17px;
-  line-height: 14px;
+  line-height: 1;
   margin-bottom: 10px;
 }
 
 .education_position {
   font-weight: 700;
   font-size: 14px;
-  line-height: 15px;
+  line-height: 1.08;
   color: #000000;
   margin-bottom: 10px;
 }
@@ -245,7 +257,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 15px;
+  line-height: 1.25;
   color: #a8a8a8;
 }
 
@@ -253,6 +265,12 @@ body {
 .sidebar {
   background-color: #1e2939;
   padding-top: 40px;
+}
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+  .sidebar {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .photo {
@@ -272,7 +290,7 @@ body {
   font-style: normal;
   font-weight: bold;
   font-size: 22px;
-  line-height: 27px;
+  line-height: 1.22;
   margin-bottom: 10px;
 }
 
@@ -353,5 +371,5 @@ body {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
 }/*# sourceMappingURL=style.css.map */
